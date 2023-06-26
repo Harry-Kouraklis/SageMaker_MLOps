@@ -19,11 +19,12 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
 
-    train_data_path = args.train
+    x_train_data_path = args.X_train
+    y_train_data_path = args.y_train
     
     print("Reading input data")
-    X_train = pd.read_csv(X_train_features_output_path, header=None)
-    y_train = pd.read_csv(y_train_features_output_path, header=None)
+    X_train = pd.read_csv(x_train_data_path, header=None)
+    y_train = pd.read_csv(y_train_data_path, header=None)
     
 
     model = LogisticRegression(class_weight="balanced", solver="lbfgs")

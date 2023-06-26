@@ -1,3 +1,5 @@
 **/*.cpython-37..pyc
 **/*.cpython-37..pyc
 **/__pycache__
+.ipynb_checkpoints/train_model-checkpoint.py
+.ipynb_checkpoints/train_preprocessing-checkpoint.py
